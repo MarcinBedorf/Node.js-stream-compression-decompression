@@ -3,7 +3,7 @@ const {createReadStream, createWriteStream} = require('fs');
 const {createDecipher} = require('crypto');
 const {promisify} = require('util');
 const scrypt = promisify(require('crypto').scrypt);
-const {ENCRYPTED_SALT} = require('./Kryptografia/salt');
+const {ENCRYPTED_SALT} = require('./salt');
 const {createGunzip} = require('zlib');
 
 (async () => {
@@ -20,5 +20,5 @@ const {createGunzip} = require('zlib');
     createWriteStream(outputFile),
   );
 
-  console.log('Decrypted.');
+  console.log('Decompressed and decrypted.');
 })();
