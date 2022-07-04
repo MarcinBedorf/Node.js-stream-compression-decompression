@@ -20,5 +20,5 @@ const {createGzip} = require('zlib');
     createWriteStream(outputFile),
 );
 
-  console.log('Encrypted.');
+  console.log('Encrypted and compressed.');
 })();
