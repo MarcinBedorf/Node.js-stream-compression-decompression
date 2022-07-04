@@ -20,5 +20,5 @@ const {createGunzip} = require('zlib');
     createWriteStream(outputFile),
   );
 
-  console.log('Decompressed and decrypted.');
+  console.log('Decrypted and decompressed.');
 })();
